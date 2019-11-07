@@ -1,0 +1,48 @@
+@import 'font';
+
+body {
+  font-family: 'ProximaNova-Regular';
+  // font-family: 'RobotoMono-Regular'
+  background: #FAFAFA;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-grow {
+  flex-grow: 1;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-al-center {
+  align-items: center;
+}
+
+.f-just-end {
+  justify-content: flex-end;
+}
+
+.left-bar {
+  height: 100vh;
+  border-right: rgb(223, 223, 223) 1px solid;
+  >div {
+    padding: 30px;
+  }
+  >.logo img {
+    margin-right: 15px;
+  }
+}
+
+.top-bar {
+  padding: 15px;
+  border-bottom: rgb(223, 223, 223) 1px solid;
+}

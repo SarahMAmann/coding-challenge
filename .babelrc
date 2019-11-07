@@ -1,0 +1,9 @@
+{
+    "presets": ["react"],
+    "plugins": [],
+    "env": {
+        "development": {
+            "presets": []
+        }
+    }
+}
