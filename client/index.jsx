@@ -6,12 +6,12 @@ import AppWrapper from './AppWrapper';
 import MachinePage from './MachinePage';
 
 const machineData = {
-  averageCycleTime: 45, // in seconds
+  averageCycleTime: 45, // in seconds ---- table
   machine: {
     id: 29012,
     name: 'Haas #1',
-  },
-  partCount: 1002, // count value
+  }, // ---- title
+  partCount: 1002, // count value ----- table
   partsByHour: [
     { time: '01:00 AM', count: 91 },
     { time: '02:00 AM', count: 78 },
@@ -28,11 +28,11 @@ const machineData = {
     { time: '01:00 PM', count: 67 },
     { time: '02:00 PM', count: 128 },
     { time: '03:00 PM', count: 21 },
-  ],
-  productionTime: 12.43, // in hours
-  scrapCount: 74, // count value
-  scrapPercentage: .0739, // % out of 1.0
-  utilization: .869, // % out of 1.0
+  ], // ---- bar chart
+  productionTime: 12.43, // in hours ---- table
+  scrapCount: 74, // count value ---- table
+  scrapPercentage: .0739, // % out of 1.0 ---- pie chart
+  utilization: .869, // % out of 1.0 ---- pie chart
 }
 
 class App extends React.Component {
