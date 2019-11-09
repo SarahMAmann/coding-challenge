@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BarChart from './components/Bar';
 import PieChart from './components/Pie';
+import ProductionToggle from './components/ProductionToggle';
+import CycleToggle from './components/CycleToggle';
 
 
 const MachinePage = ({
@@ -29,13 +31,21 @@ const MachinePage = ({
             <table>
               <tr>
                 <td className="table-label">Average Cycle Time:</td>
-                <td className="table-data">{averageCycleTime} sec</td>
+                <td className="table-data">
+                  <CycleToggle 
+                    averageCycleTime={averageCycleTime}
+                  />
+                </td>
                 <td className="table-label">Part Count:</td>
                 <td className="table-data">{partCount}</td>
               </tr>
               <tr>
                 <td className="table-label">Production Time:</td>
-                <td className="table-data">{productionTime} hrs</td>
+                <td className="table-data">
+                  <ProductionToggle 
+                    productionTime={productionTime}
+                  />
+                </td>
                 <td className="table-label">Scrap Count:</td>
                 <td className="table-data">{scrapCount}</td>
               </tr>
@@ -49,7 +59,7 @@ const MachinePage = ({
           </div>
       </div>
       <div className="third-row">
-      <p className="bar-chart-title">Parts Produced By Hour:</p>
+        <p className="bar-chart-title">Parts Produced By Hour:</p>
         <BarChart 
         partsByHour={partsByHour}
         />

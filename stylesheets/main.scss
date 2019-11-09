@@ -115,6 +115,15 @@ tr {
   font-family: 'RobotoMono-Regular';
 }
 
+.toggle-button {
+  float: right;
+  color: white;
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+
 .pie-column {
   display: flex;
   flex-direction: column;
