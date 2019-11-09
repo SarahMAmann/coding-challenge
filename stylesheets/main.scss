@@ -53,6 +53,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 
@@ -68,7 +69,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  height: 30%;
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 .table-column {
@@ -77,8 +80,14 @@ body {
   flex-basis: 100%;
   flex: 1;
 }
-.second-row {
-  height: 30%;
+
+
+tr {
+  height: 100px;
+}
+
+.table-label {
+  width: 30%;
 }
 
 .pie-column {
@@ -90,9 +99,14 @@ body {
 
 .pie-chart {
   height: 100%;
+  padding-right: 15%;
 }
 
 .third-row {
-  padding-top: 5%;
+  padding-left: 5%;
   height: 30%;
+}
+
+.chart {
+  padding-right: 5%;
 }

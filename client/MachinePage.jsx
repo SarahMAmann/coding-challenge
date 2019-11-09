@@ -26,7 +26,20 @@ const MachinePage = ({
       </div>
       <div className="second-row">
           <div className="table-column">
-            table
+            <table>
+              <tr>
+                <td className="table-label">Average Cycle Time:</td>
+                <td>{averageCycleTime} sec</td>
+                <td className="table-label">Part Count:</td>
+                <td>{partCount}</td>
+              </tr>
+              <tr>
+                <td className="table-label">Production Time:</td>
+                <td>{productionTime} hrs</td>
+                <td className="table-label">Scrap Count:</td>
+                <td>{scrapCount}</td>
+              </tr>
+            </table>
           </div>
           <div className="pie-column">
             <PieChart 
