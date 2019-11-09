@@ -5,7 +5,7 @@ import '../stylesheets/main.scss';
 import AppWrapper from './AppWrapper';
 import MachinePage from './MachinePage';
 
-const machineData = {
+export const machineData = {
   averageCycleTime: 45, // in seconds ---- table
   machine: {
     id: 29012,

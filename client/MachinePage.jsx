@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import BarChart from './components/Bar';
+
 
 const MachinePage = ({
   averageCycleTime,
@@ -33,7 +35,10 @@ const MachinePage = ({
           </div>
       </div>
       <div className="third-row">
-        bar graph
+        parts produced by hour:
+        <BarChart 
+        partsByHour={partsByHour}
+        />
       </div>
     </div>
   );
