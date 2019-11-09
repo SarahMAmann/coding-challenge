@@ -29,15 +29,15 @@ const MachinePage = ({
             <table>
               <tr>
                 <td className="table-label">Average Cycle Time:</td>
-                <td>{averageCycleTime} sec</td>
+                <td className="table-data">{averageCycleTime} sec</td>
                 <td className="table-label">Part Count:</td>
-                <td>{partCount}</td>
+                <td className="table-data">{partCount}</td>
               </tr>
               <tr>
                 <td className="table-label">Production Time:</td>
-                <td>{productionTime} hrs</td>
+                <td className="table-data">{productionTime} hrs</td>
                 <td className="table-label">Scrap Count:</td>
-                <td>{scrapCount}</td>
+                <td className="table-data">{scrapCount}</td>
               </tr>
             </table>
           </div>
@@ -49,7 +49,7 @@ const MachinePage = ({
           </div>
       </div>
       <div className="third-row">
-        parts produced by hour:
+      <p className="bar-chart-title">Parts Produced By Hour:</p>
         <BarChart 
         partsByHour={partsByHour}
         />

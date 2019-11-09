@@ -51,9 +51,21 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 30%;
   padding-top: 5%;
   padding-left: 5%;
+  align-items: center;
+}
+
+.machine-name {
+  font-family: 'ProximaNova-Bold';
+  font-size: 200%;
+}
+
+.id-number {
+  color: lightgray;
+  font-family: 'ProximaNova-Bold';
+  font-size: 150%;
 }
 
 
@@ -88,6 +100,11 @@ tr {
 
 .table-label {
   width: 30%;
+  font-family: 'ProximaNova-Bold';
+}
+
+.table-data {
+  font-family: 'RobotoMono-Regular';
 }
 
 .pie-column {
@@ -105,6 +122,10 @@ tr {
 .third-row {
   padding-left: 5%;
   height: 30%;
+}
+
+.bar-chart-title {
+  font-family: 'ProximaNova-Bold';
 }
 
 .chart {
