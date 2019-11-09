@@ -93,6 +93,13 @@ body {
   flex: 1;
 }
 
+table {
+  background-color: white;
+  border: solid;
+  border-width: .3px;
+  border-color: lightgray;
+  height: 75%;
+}
 
 tr {
   height: 100px;
@@ -101,6 +108,7 @@ tr {
 .table-label {
   width: 30%;
   font-family: 'ProximaNova-Bold';
+  padding-left: 5%;
 }
 
 .table-data {
