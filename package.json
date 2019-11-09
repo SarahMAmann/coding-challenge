@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "@nivo/bar": "^0.59.2",
+    "@nivo/pie": "^0.59.1",
     "express": "^4.16.2",
     "nivo": "^0.31.0",
     "prop-types": "^15.7.2",

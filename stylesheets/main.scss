@@ -75,7 +75,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 2;
+  flex: 1;
+}
+.second-row {
+  height: 30%;
 }
 
 .pie-column {
@@ -83,6 +86,10 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+.pie-chart {
+  height: 100%;
 }
 
 .third-row {

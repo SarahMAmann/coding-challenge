@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BarChart from './components/Bar';
+import PieChart from './components/Pie';
 
 
 const MachinePage = ({
@@ -28,10 +29,10 @@ const MachinePage = ({
             table
           </div>
           <div className="pie-column">
-            pie chart
-          </div>
-          <div className="pie-column">
-            pie chart
+            <PieChart 
+            scrapPercentage={scrapPercentage}
+            utilization={utilization}
+            />
           </div>
       </div>
       <div className="third-row">
