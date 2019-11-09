@@ -37,7 +37,7 @@ const MachinePage = ({
                   />
                 </td>
                 <td className="table-label">Part Count:</td>
-                <td className="table-data">{partCount}</td>
+                <td className="table-data" style={{color: partCount >= 1000 ? 'green' : 'red'}}>{partCount}</td>
               </tr>
               <tr>
                 <td className="table-label">Production Time:</td>
@@ -47,7 +47,7 @@ const MachinePage = ({
                   />
                 </td>
                 <td className="table-label">Scrap Count:</td>
-                <td className="table-data">{scrapCount}</td>
+                <td className="table-data" style={{color: scrapCount <= 70 ? 'green' : 'red'}}>{scrapCount}</td>
               </tr>
             </table>
           </div>
