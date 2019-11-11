@@ -2,7 +2,12 @@ import React from 'react';
 import { ResponsivePie } from '@nivo/pie';
 import PropTypes from 'prop-types';
 import { machineData } from '..';
-  
+ 
+
+// Based on my understanding of the data, it looked like it made
+// sense to include both scrap percentage and utilization in the
+// same pie chart, as percentages of total parts produced. If utilization
+// is referring to something else here, it could be placed in a separate pie chart.
 
   const PieChart = () => {
       const remainingValue = (1 - (machineData.scrapPercentage + machineData.utilization)).toFixed(4)

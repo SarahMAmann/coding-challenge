@@ -1,3 +1,9 @@
+// this config is broken out separately here just for ease of
+// reading, the component was getting a little long and I 
+// sometimes find it a little easier to re-use the component with
+// new data when it's been broken down a bit!
+
+
 export default {
     keys: [
         "count"

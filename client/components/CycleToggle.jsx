@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { machineData } from '..';
 
+// a button component to toggle between viewing cycle time
+// in minutes or seconds
+
 class CycleToggle extends React.Component {
     constructor (props) {
       super(props);

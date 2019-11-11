@@ -37,6 +37,9 @@ const MachinePage = ({
                   />
                 </td>
                 <td className="table-label">Part Count:</td>
+
+                {/* this line will show the part count as red if less than 1000, green if more
+                as an example of a kind of alert that a manufacturer might want to see: */}
                 <td className="table-data" style={{color: partCount >= 1000 ? 'green' : 'red'}}>{partCount}</td>
               </tr>
               <tr>
@@ -47,6 +50,8 @@ const MachinePage = ({
                   />
                 </td>
                 <td className="table-label">Scrap Count:</td>
+
+                {/* same thing here, alerts with red if count less than 70, green if not: */}
                 <td className="table-data" style={{color: scrapCount <= 70 ? 'green' : 'red'}}>{scrapCount}</td>
               </tr>
             </table>
@@ -67,6 +72,10 @@ const MachinePage = ({
     </div>
   );
 };
+
+// I did not use PropTypes in my previous role since we were
+// already using TypeScript, but after this build I have 
+// decided I am a fan of PropTypes :)
 
 MachinePage.defaultProps = {};
 MachinePage.propTypes = {

@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 import { machineData } from '..';
 
 
+// Bar Chart component showing parts produced by hour. I know the 
+// ReadMe mentioned that charting libraries were not required,
+// but I used Nivo charts here for the bar and pie components just
+// because it's my favorite and I'm very used to working with it.
+
 const BarChart = () => {
     return (
       <div className="chart">
